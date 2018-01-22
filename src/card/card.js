@@ -138,8 +138,8 @@ class Card {
     }
 
     getSoundUrl(filename) {
-        // alternate: http://media.services.zam.com/v1/media/byName/hs/sounds/enus
-        const urlBase = 'http://media-hearth.cursecdn.com/audio/card-sounds/sound'
+        // alternate (switched): http://media-hearth.cursecdn.com/audio/card-sounds/sound
+        const urlBase = 'http://media.services.zam.com/v1/media/byName/hs/sounds/enus'
         const extension = 'ogg'
         return encodeURI(`${urlBase}/${filename}.${extension}`)
     }
